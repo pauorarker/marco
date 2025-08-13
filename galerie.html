@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gallery-page">
+  <!-- Encadrés latéraux -->
+ <div class="label left-label">My content</div>
+  <div class="label right-label">
+    <h1>toys enjoyer!!</h1>
+    <h2>
+    <ul>
+      <li> loud moans<3</li>
+      <li>breath play</li>
+      <li>slight BDSM</li>
+    </ul>
+</h2>
+  </div>
+
+  <div class="container">
+    <h1>L O V E</h1>
+
+    <div class="grid">
+      <div class="grid-item" onclick="openPlayer('song1.mp4')">
+        <img src="photo1.png" alt="Photo 1">
+      </div>
+      <div class="grid-item" onclick="openPlayer('song2.mp4')">
+        <img src="photo2.png" alt="Photo 2">
+      </div>
+      <div class="grid-item" onclick="openPlayer('song3.mp4')">
+        <img src="photo3.png" alt="Photo 3">
+      </div>
+    </div>
+  </div>
+
+ <!-- Pop-up mini lecteur -->   
+<div id="popup-player" class="popup">     <audio controls id="audio-player">       <source src="" type="audio/m4a">       Ton navigateur ne supporte pas l'audio.     </audio>     <button onclick="closePlayer()">Fermer</button>   
+
+  <script src="script.js"></script>
+</body>
+</html>
